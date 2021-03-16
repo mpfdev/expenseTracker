@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lumen/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5 text-center">Expense Tracker</h1>
+      <h3 class="my-2 text-center">Add New Expense:</h3>
+
+      <form>
+        <div class="form-group">
+          <label for="expenseName">Expense</label>
+          <input
+            type="text"
+            class="form-control"
+            id="expenseName"
+            placeholder="Enter your expense"
+          />
+          <small class="form-text text-muted"
+            >Add your expense.</small
+          >
+        </div>
+
+        <div class="form-group">
+          <label for=expenseDate">Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="expenseDate"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="expenseAmount">Amount</label>
+          <input
+            type="number"
+            class="form-control"
+            id="expenseAmount"
+            placeholder="Price you spent"
+          />
+        </div>
+      </form>
+      <button id="addExpense" type="button" class="btn btn-success text-right">Add New Expense</button>
+
+      <table class="table table-hover mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Expense Name</th>
+            <th scope="col">Expense Date</th>
+            <th scope="col">Expense Amount</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="expenseList"></tbody>
+      </table>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
